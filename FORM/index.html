@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <form name="form">
+        User: <input type="text" name="inputNick" /><span></span> <br />
+        Password: <input type="text" name="inputPass1" /><span></span>
+        Confirm Password: <input type="text" name="inputPass2" /><span></span> <br />
+        Email: <input type="text" name="inputEmail" /><span></span>
+
+       Hobbies: <select name="hobby" multiple>
+            <option value="Programar">Programming</option>
+            <option value="Leer">Read</option>
+            <option value="Cantar">Sing</option>
+            <option value="Bailar">Dance</option>
+        </select><span></span> <br />
+        DNI: <input type="text" name="inputDNI" /><span></span> <br />
+
+        
+
+        I accept the conditions: <input type="checkbox" name="conditions" value="acepto" /><span></span>
+        <input type="submit" value="Regístrate" />
+    </form>
+
+    <input type="button" value="Save data" id="saveData" />
+  
+   New hobbie:<input type="text" name="newHobby" id="newHobby" />
+    <input type="button" value="Add hobby" onclick="addHobby();" >
+</body>
+
+</html>
